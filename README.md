@@ -13,7 +13,9 @@
   $ mkdir ~/asus-yocto-sumo
   $ cd ~/asus-yocto-sumo
 
-  $ repo init -u https://github.com/ASUS-IPC/manifest.git -b yocto-sumo-imx_8m -m asus-pe100a-4.14.98-1.0.15.xml
+  $ repo init -u https://github.com/ASUS-IPC/manifest.git -m $manifest_name
+  ex. for asus-pe100a-4.14.98-1.0.15.xml:
+  $ repo init -u https://github.com/ASUS-IPC/manifest.git -m asus-pe100a-4.14.98-1.0.15.xml
   $ repo sync -j4
 ```
 3.	Setup Docker
