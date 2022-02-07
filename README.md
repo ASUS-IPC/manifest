@@ -55,16 +55,31 @@ Manage Docker as a non-root user
 ```
 > Once the step above is finished, you are in the shell of the newly started Docker container. You can issue the following command to build all the images for yocto.
 Below was sample command for ASUS PE100A, If you want to build image for other HW device, please change the MACHINE name (ex. imx8mq-pv100a for ASUS PV100A)
+
+For 4.14.98 :
 ```
   $ DISTRO=fsl-imx-xwayland MACHINE=imx8mq-pe100a EULA=1 source fsl-setup-release.sh -b build_imx8mq-pe100a
   $ bitbake fsl-image-qt5-validation-imx
 ```
+For 5.10.9 :
+```
+  $ DISTRO=fsl-imx-xwayland MACHINE=imx8mq-pe100a EULA=1 source imx-setup-release.sh -b build_imx8mq-pe100a
+  $ bitbake imx-image-full
+```
 After build successfully, you can find all image at below path
-> Bootloader Image：
+> Bootloader Image for 4.14.98 :
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-boot-imx8mq-pe100a-sd.bin
 ```
-> Full Raw Image：
+> Bootloader Image for 5.10.72 :
+```
+  $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-boot-imx8mq-pe100a-4G.bin-flash_evk
+```
+> Full Raw Image for 4.14.98 :
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/fsl-image-qt5-validation-imx-imx8mq-pe00a.sdcard.bz2
+```
+> Full Raw Image for 5.10.72 :
+```
+  $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-image-full-imx8mq-pe100a-20xxxxxxxxxxxx.rootfs.wic.bz2
 ```
