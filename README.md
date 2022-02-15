@@ -71,7 +71,7 @@ After build successfully, you can find all image at below path
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-boot-imx8mq-pe100a-sd.bin
 ```
-> Bootloader Image for 5.10.72 :
+> Bootloader Image for 5.10.9 :
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-boot-imx8mq-pe100a-4G.bin-flash_evk
 ```
@@ -79,7 +79,7 @@ After build successfully, you can find all image at below path
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/fsl-image-qt5-validation-imx-imx8mq-pe00a.sdcard.bz2
 ```
-> Full Raw Image for 5.10.72 :
+> Full Raw Image for 5.10.9 :
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-image-full-imx8mq-pe100a-20xxxxxxxxxxxx.rootfs.wic.bz2
 ```
