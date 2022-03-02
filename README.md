@@ -81,5 +81,5 @@ After build successfully, you can find all image at below path
 ```
 > Full Raw Image for 5.10.9 :
 ```
-  $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-image-full-imx8mq-pe100a-20xxxxxxxxxxxx.rootfs.wic.bz2
+  $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-image-full-imx8mq-pe100a.wic.bz2
 ```
