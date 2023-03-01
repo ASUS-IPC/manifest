@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="asus"        fetch="https://github.com/ASUS-IPC"/>
+  
+  <default sync-j="2"/>
+  
+  <project path="debian" name="debian" 	remote="asus"	revision="debian-imx_8m"/>
+  <project path="device" name="device"  	remote="asus"	revision="debian-imx_8m">
+    <linkfile src="nxp/common/build.sh" dest="build.sh" />
+  </project>
+  <project path="docker_builder" name="docker_builder" 	remote="asus"	revision="debian-imx_8m"/>
+  <project path="imx-atf" name="imx-atf" 	remote="asus"	revision="debian-imx_8m"/>
+  <project path="imx-mkimage" name="imx-mkimage" 	remote="asus"	revision="debian-imx_8m"/>
+  <project path="linux-imx" name="linux-imx" 	remote="asus"	revision="debian-imx_8m"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" name="prebuilts-gcc-linux-x86-aarch64-gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" 	remote="asus"	revision="debian-imx_8m"/>
+  <project path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" name="prebuilts-gcc-linux-x86-arm-gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" 	remote="asus"	revision="debian-imx_8m"/>
+  <project path="uboot-imx" name="uboot-imx" 	remote="asus"	revision="debian-imx_8m"/>
+</manifest>
