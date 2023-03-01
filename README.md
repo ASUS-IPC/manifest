@@ -1,5 +1,5 @@
 # ASUS Yocto BSP build SOP
-1.	Create an Ubuntu machine environment (Using one of the following versions is recommended: 16.04/18.04/20.04.)
+1.	Create an Ubuntu machine environment (Using one of the following versions is recommended: 20.04)
 2.	Download Yocto source code from github
 ```
   $ git config --global user.name "Your Name"
