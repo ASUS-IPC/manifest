@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="CAF"         fetch="https://source.codeaurora.org/external/imx"/>
+  <remote name="CAF"         fetch="https://github.com/nxp-imx"/>
   <remote name="OSSystems"   fetch="https://github.com/OSSystems"/>
   <remote name="QT5"         fetch="https://github.com/meta-qt5"/>
   <remote name="Timesys"     fetch="https://github.com/TimesysGit"/>
   <remote name="clang"       fetch="https://github.com/kraj"/>
   <remote name="community"   fetch="https://github.com/Freescale"/>
-  <remote name="imx-support" fetch="https://source.codeaurora.org/external/imxsupport"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
   <remote name="oe"          fetch="https://github.com/openembedded"/>
   <remote name="python2"     fetch="https://git.openembedded.org"/>
   <remote name="rust"        fetch="https://github.com/meta-rust"/>
@@ -24,7 +24,7 @@
   <project name="meta-freescale"           path="sources/meta-freescale"           remote="community"   revision="469d6c958c76ea235b3d3c1527e797ce3a7392e3" upstream="hardknott"/>
   <project name="meta-freescale-3rdparty"  path="sources/meta-freescale-3rdparty"  remote="community"   revision="f8150f3b37cb83cba1f9e2378e57bb63e02d4610" upstream="hardknott"/>
   <project name="meta-freescale-distro"    path="sources/meta-freescale-distro"    remote="community"   revision="e6daa26ba1f748326546063d63a085ae671827d9" upstream="hardknott"/>
-  <project name="meta-imx"                 path="sources/meta-imx"                 remote="CAF"         revision="refs/tags/rel_imx_5.10.72_2.2.0" upstream="hardknott-5.10.72-2.2.0">
+  <project name="meta-imx"                 path="sources/meta-imx"                 remote="CAF"         revision="cc4c2d1c845b48fdec989f089aee3c13d2b1e15b" upstream="hardknott-5.10.72-2.2.0">
     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
@@ -37,6 +37,8 @@
 
   <project name="meta-virtualization"      path="sources/meta-virtualization"      remote="yocto"        revision="7f719ef40896b6c78893add8485fda995b00d51d" upstream="hardknott"/>    
 
-  <project name="meta-asus-imx"            path="sources/meta-asus-imx"            remote="asus"	revision="yocto-3.3-imx_8m"/>
+  <project name="meta-asus-imx"            path="sources/meta-asus-imx"            remote="asus"	revision="yocto-3.3-imx_8m">
+     <linkfile src="asus-setup-release.sh" dest="asus-setup-release.sh" />
+  </project>
   <project name="docker_builder"           path="docker_builder"                   remote="asus"	revision="yocto-3.3-imx_8m"/>
 </manifest>
