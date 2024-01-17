@@ -66,12 +66,17 @@ For 5.10.9 :
   $ DISTRO=fsl-imx-xwayland MACHINE=imx8mq-pe100a EULA=1 source imx-setup-release.sh -b build_imx8mq-pe100a
   $ bitbake imx-image-full
 ```
+For 5.15.52 :
+```
+  $ DISTRO=fsl-imx-xwayland MACHINE=imx8mq-pe100a EULA=1  source asus-setup-release.sh -b build_imx8mq-pe100a
+  $ bitbake imx-image-full
+```
 After build successfully, you can find all image at below path
 > Bootloader Image for 4.14.98 :
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-boot-imx8mq-pe100a-sd.bin
 ```
-> Bootloader Image for 5.10.9 :
+> Bootloader Image for 5.10.9 and 5.15.52 :
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-boot-imx8mq-pe100a-4G.bin-flash_evk
 ```
@@ -79,7 +84,7 @@ After build successfully, you can find all image at below path
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/fsl-image-qt5-validation-imx-imx8mq-pe00a.sdcard.bz2
 ```
-> Full Raw Image for 5.10.9 :
+> Full Raw Image for 5.10.9 and 5.15.52 :
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-image-full-imx8mq-pe100a.wic.bz2
 ```
