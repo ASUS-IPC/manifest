@@ -88,3 +88,8 @@ After build successfully, you can find all image at below path
 ```
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-image-full-imx8mq-pe100a.wic.bz2
 ```
+5. Here are pre-fetched downloads.
+> downloads for 5.15.x:
+```
+   https://asus-my.sharepoint.com/:u:/p/singhome1_lee/EQ8STDRQBMZAg2a_tHqEGSAB_bX6g14uSwaQC0t0gl3esg?e=9tlzJx
+```
