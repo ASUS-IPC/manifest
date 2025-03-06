@@ -78,6 +78,7 @@ After build successfully, you can find all image at below path
 ```
 > Bootloader Image for 5.10.9 and 5.15.52 :
 ```
+  $ export VERSION=RELEASE
   $ build_imx8mq-pe100a/tmp/deploy/images/imx8mq-pe100a/imx-boot-imx8mq-pe100a-4G.bin-flash_evk
 ```
 > Full Raw Image for 4.14.98 :
